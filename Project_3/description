@@ -1,0 +1,15 @@
+In this project you have to solve the stereo vision problem:
+Given two images showing a scene from different points of view, the goal is to reconstruct 3D world coordinates for each point in the scene.
+You will develop an algorithm, that has as a final output a point cloud, which you will be able to visualize.
+The performance will be evaluated based on the dense distance map, i.e. the map of Z coordinates.
+Additionally the algorithm should output pixel-wise certainties, i.e. a value indicating how certain the prediction of that pixel is.
+One possible strategy :
+There certainly are more than one good solution to this problem.
+Here we briefly describe the steps of one possible implementation:
+Determine all camera calibration parameters. As the parameters might change between scenes - this should be automated.
+To invert the projection equations (see below) it is necessary to solve the correspondence problem,
+i.e. the knowledge of which pixel in the first view corresponds to a given pixel in the second view (and vice versa).
+The special camera setup in this exercise implies very simple epipolar lines.
+This simplifies the correspondece search. During this search a similarity measure of two pixels might come in handy.
+One such similarity measure was discussed in the lecture - the Normalised Cross Correlation (NCC) of patches.
+Triangulate the 3D world coordinates for every pixel pair in the left and right image.
