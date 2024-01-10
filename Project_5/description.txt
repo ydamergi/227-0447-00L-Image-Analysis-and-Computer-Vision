@@ -1,0 +1,10 @@
+In this exercise, you will again tackle the image classification task, as in exercise 4.
+Given an input RGB image with resolution (32, 32, 3), you need to predict which of the 10 input classes it belongs to.
+However, unlike in exercise 4, you have access to limited training data in training.h5.
+In fact, you only have 210 samples per class, which are separated into training, validation, and test sets of ratio 7:1:2 for ease of use.
+You can use these three sets of data for your development.
+Fortunately, you have access to a pre-trained network which has been trained on large amounts of data to classify 5 out of 10 input classes.
+That is, the pre-trained network obtains a classification accuracy of around 95% for 5 of the classes, while the remaining classes are not defined at all.
+The pretrained parameters are stored in ckpt/resnet4five.pt and the loading process explained below.
+Your task is to either adapt this model, or train a new network from scratch which can classify all 10 classes
+Similar to exercise 4, we will use the PyTorch deep learning framework in this exercise.
