@@ -1,0 +1,14 @@
+Your tic-tac-toe championship was a major success and everyone is waiting for the next event from you.
+Meanwhile, some curious eyes have also noticed the impressive compression algorithm you developed.
+Among them is a group of budding entrepreneurs who are working on a noble mission:
+to empower everyone to make their own Cat Memes.
+Specifically, they are developing an app where you can take a photo of your cute cat, segment it out, and paste it on any background to design your own meme.
+Crucially, the users only have to create a few scribbles, which mark the foreground (the cat) and background of the image.
+As none of the founders are Computer Vision engineers, they have approached you to develop the segmentation algorithm for the app.
+Details about the setup
+For each test sample, the algorithm is provided a triplet consisting of the RGB image, the foreground (FG) scribble and the background (BG) scribble. 
+We denote this triplet as a sample.
+FG scribble is a grayscale image, where white pixels (255) are guaranteed to belong to the foreground (cat).
+BG scribble is a grayscale image, where white pixels (255) are guaranteed to belong to the background.
+The RGB image is a discrete image of 3 channels. Each pixel in these images is an integer which can take values between [0, 255]
+All images of a sample have the same size. However, note that RGB images from two different samples may have different sizes.
