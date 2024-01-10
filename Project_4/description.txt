@@ -1,0 +1,13 @@
+Given an input RGB image, you should train a neural network which outputs the class label the image belongs to.
+There are six class labels in our dataset: "buildings", "forests", "mountains", "glacier", "sea", and "street".
+In order to design and train your network, we provide a training set and validation set along with class labels for every image.
+As you are already familiar, we separate the dataset into three splits: training, validation, and testing.
+The train set has 6K images (1K per class), and the val and test sets each have 1.2K images (200 per class).
+
+This exercise acts as a gentle introduction to PyTorch, one of the most popular deep learning frameworks.
+We provide a majority of the code to get you started and familiarized with the framework.
+Running through all the cells will give you a simple linear network that can achieve the baseline performance.
+To pass, you will need to modify the given implementation and train a network that can achieve better performance.
+Evaluation Criteria
+Your algorithm will be evaluated using classification accuracy, which is the proportion of images with the correct predicted label.
+The final EvaluationScore is obtained as the classification accuracy over all test samples.
